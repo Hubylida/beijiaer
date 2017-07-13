@@ -1,6 +1,6 @@
 .products-contain{
     min-width: 1400px;
-    height: 600px;
+    height: 680px;
     padding-top: 10px;
 }
 #list{
@@ -18,24 +18,22 @@
 }
 .products-contain table{
     width: 70%;
-    height: 80%;
+    height: 88%;
     margin: 0 auto;
     background: #fff;
 }
 .products-contain td{
-    position: relative;
+    text-align: center;
 }
 .products-contain a{
     display: inline-block;
-    width: 232px;
-    height: 202px;
+    width: 240px;
+    height: 240px;
     background-color: #f66;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
+}
+.products-contain img{
+    width: 240px;
+    height: 240px;
 }
 #page-column{
     width: 70%;

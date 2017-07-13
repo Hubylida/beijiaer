@@ -102,6 +102,30 @@ a{
     left: 14px;
     border-radius: 2px;
 }
+.qsCode{
+    position: fixed;
+    top: 43%;
+    left: 30px;
+    z-index: 9999;
+    display: none;
+}
+.qsCode-p{
+    background: url('img/qsCode.png') no-repeat;
+    width: 16px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+.qsCode-img{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-color: #ff6347;
+}
+.qsCode-img img{
+    width: 120px;
+    height: 120px;
+}
 .second-img{
     min-width: 1350px;
     height: 450px;
@@ -180,10 +204,15 @@ a{
     width: 50%;
     display: inline-block;
 }
+#left-img img{
+    width: 447px;
+    height: 256px;
+}
 #right-passage{
     width: 40%;
     letter-spacing: 2px;
     display: inline-block;
+    vertical-align: top;
     line-height: 2em;
 }
 .three-modules-contain{
@@ -316,7 +345,7 @@ a{
     position: relative;
 }
 .footer-contain{
-    width: 607px;
+    width: 620px;
     height: 100px;
     margin: auto;
     position: absolute;

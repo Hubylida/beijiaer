@@ -1,0 +1,30 @@
+.findUs-contain{
+    position: fixed;
+    left: 0;
+    top: 40%;
+    display: none;
+    width: 210px;
+}
+.finUs{
+    width: 100%;
+    height: 100%;
+}
+.findUs p{
+    width: 100%;
+    height: 40px;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+    text-align: justify;
+    line-height: 40px;
+    transition: all 0.7s;
+}
+.findUs p:hover{
+    background-color: #444;
+    color: #fff;
+}
+.findUs p:first-child{
+    border-top: 1px solid #ccc;
+}
