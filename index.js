@@ -24,39 +24,11 @@ var text = document.querySelectorAll('.text');
                 }
             }
 
-        
-var hoverPic  = document.querySelectorAll('.hoverPic');
-var pictureL = hoverPic.length;
-var hoverPicSrc = 
-[
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAg8Z69xgUo7rC07AEw7AE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAg8Z69xgUo6eWlvwMw7QE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAg8Z69xgUo4Kyq5gYw7AE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAg8p69xgUo8IzQLzDsATjiAg.jpg"
-];
-var hoverPicSrcF = 
-[
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAghIzcvwUo7YCdwQIw7AE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAghIzcvwUo9rz_jgUw7AE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAgg4zcvwUo4sOp3wMw7AE44gI.jpg",
-    "http://7868925.s61i.faiusr.com/2/AD0I-aPgAxACGAAgg4zcvwUogPCxDzDsATjiAg.jpg"
-];
-   for(var i = 0; i < pictureL; i++){
-        hoverPic[i].addEventListener('mouseover',(function(x){
-            return function(){
-                hoverPic[x].src = hoverPicSrc[x];           
-            };
-        })(i));
-        hoverPic[i].addEventListener('mouseout',(function(x){
-            return function(){
-                hoverPic[x].src = hoverPicSrcF[x];
-            };
-        })(i));
-    }
-
 // ...........
 var go_up = document.querySelector('.go-up');
 var qsCode = document.querySelector('.qsCode');
+var modules = document.querySelector('.three-modules');
+var time;
 window.onscroll = function(){
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
     var clientHeight = document.documentElement.clientHeight;
@@ -79,4 +51,3 @@ function scrollBack(){
         clearTimeout(timer)
     }
 }
-

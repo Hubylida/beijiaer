@@ -16,8 +16,7 @@ a{
     color: #000;
 }
 .contain{
-    /*height: 1500px;*/
-    /*不用设置width自动为100%*/
+    margin: 0 auto;
     position: relative;
 }
 .main{
@@ -27,7 +26,7 @@ a{
 }
 .head{
     margin: 0px auto;
-    width: 1500px;
+    min-width: 1080px; 
     height:120px;
     background-color: #fff;
 }
@@ -105,16 +104,21 @@ a{
 .qsCode{
     position: fixed;
     top: 43%;
-    left: 30px;
+    left: 14px;
     z-index: 9999;
     display: none;
 }
 .qsCode-p{
     background: url('img/qsCode.png') no-repeat;
     width: 16px;
-    height: 120px;
+    height: 136px;
     display: inline-block;
     vertical-align: top;
+}
+.qsCode-p span{
+    display: inline-block;
+    margin-top: 17px;
+
 }
 .qsCode-img{
     width: 120px;
@@ -123,26 +127,17 @@ a{
     background-color: #ff6347;
 }
 .qsCode-img img{
-    width: 120px;
-    height: 120px;
+    width: 136px;
+    height: 136px;
 }
-.second-img{
-    min-width: 1350px;
-    height: 450px;
-    background-color: #fb8c00;
-    position: relative;
+
+.silder-contain{
+    min-width: 1080px;
 }
-.second-introduce{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 40px;
-    color: #fff;
-}
+
 .products{
     width: 100%;
-    min-width: 1350px;
+    min-width: 1080px; 
     height: 500px;
     margin: 0px auto;
     background-color: #eee;
@@ -172,14 +167,33 @@ a{
     width: 236px;
     height: 354px;
     display: inline-block;
+    margin-left: 9px;
 }
 .hover-picture a{
     width: 236px;
     height: 354px;
     display: inline-block;
+    background-color: #fff;
+    transition: all 1s;
+    border-radius: 20px;
+    
+}
+.hover-picture a:hover{
+    background-color: #603018;
+}
+.hover-picture img{
+    width: 200px;
+    height: 200px;
+    margin: 30px 18px;
+    border-radius: 50%;
+}
+.hover-picture p{
+    text-align: center;
+    font-size: 20px;
+    color: #3d1a02;
 }
 .company-intro{
-    min-width: 1350px;
+    min-width: 1080px; 
     height: 450px;
     background-color: #fff;
     padding-top: 30px;
@@ -204,19 +218,20 @@ a{
     width: 50%;
     display: inline-block;
 }
-#left-img img{
-    width: 447px;
-    height: 256px;
-}
+ #left-img img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+} 
 #right-passage{
     width: 40%;
     letter-spacing: 2px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: 40px;
     line-height: 2em;
 }
 .three-modules-contain{
-    min-width:1350px;
+    min-width: 1080px; 
     height: 271px; 
     background-color: #fff;
 }
@@ -238,13 +253,13 @@ a{
     margin: 20px;
 }
 .show{
-    min-width: 1350px;
+    min-width: 1080px; 
     height: 701px;
     background-color: #eee;
     padding-top: 25px;
 }
 .show-main{
-    width: 1000px;
+    width: 1000px; 
     height: 97%;
     margin: 0 auto;
     background-color: #fff;
@@ -257,12 +272,26 @@ a{
 #show-p{
     font-size: 20px;
 }
-.photo-words td{
-    width: 500px;
-    height: 287px;
-    border: 1px solid #222;
+.photo-words{
+    overflow: hidden;
+}
+.pw{
+    display: inline-block;
+
+    float: left;
+}
+.pw-p{
+    float: left;
+    display: inline-block;
+    width: 350px;
+    height: 320px;
+}
+.photo-words img{
+   width: 320px;
+   height: 240px;
 }
 .contact-contain{
+    min-width: 1080px;
     height: 462px;
     background-color: #fff;
     padding-top: 20px;
@@ -308,7 +337,7 @@ a{
     font-size: 20px;
     color: #333;
     float: left;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     opacity: 0.8;
 }
 .text{
@@ -322,7 +351,11 @@ a{
     -moz-border-radius: 2px;
     border: 1px solid #dadada;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+#textarea{
+    border: 1px solid #dadada;
+    resize: none;
 }
 #submit{
     width: 410px;
@@ -330,7 +363,7 @@ a{
     background: #ff6347;
     color: #fff;
     float: left;
-    border: 1px solid transparent;\
+    border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
     font-size: 16px;
@@ -340,6 +373,7 @@ a{
     background-color: #e33333;
 }
 .footer{
+    min-width: 1080px;
     height: 126px;
     background-color: #3d1a02;
     position: relative;
@@ -353,7 +387,7 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-}
+} 
 .footer a{
     display: inline-block;
     color:#fff;

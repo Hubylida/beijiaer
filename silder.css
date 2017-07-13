@@ -9,8 +9,10 @@ body,div,p,h1{
 }
 
 .js-silder{
+	width: 1000px;
 	position: relative;	
 	min-width: 320px;
+	margin: 0 auto;
 }
 .silder-scroll{
 	width: 100%;
