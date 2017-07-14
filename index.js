@@ -1,6 +1,7 @@
 
 
 // ............
+(function check(){
 var text = document.querySelectorAll('.text');
         var textValue = ["请填写您的真实姓名","请填写您的手机号码"];
             text[0].onfocus = function (){
@@ -23,8 +24,9 @@ var text = document.querySelectorAll('.text');
                     text[1].value = textValue[1];
                 }
             }
-
+})();
 // ...........
+
 var go_up = document.querySelector('.go-up');
 var qsCode = document.querySelector('.qsCode');
 var modules = document.querySelector('.three-modules');
