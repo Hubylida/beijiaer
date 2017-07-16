@@ -360,6 +360,7 @@ a{
     margin-bottom: 15px;
 }
 #textarea{
+    width: 410px;
     border: 1px solid #dadada;
     resize: none;
 }
