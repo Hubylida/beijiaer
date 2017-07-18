@@ -1,32 +1,5 @@
 
 
-// ............
-(function check(){
-var text = document.querySelectorAll('.text');
-        var textValue = ["请填写您的真实姓名","请填写您的手机号码"];
-            text[0].onfocus = function (){
-                if(text[0].value == textValue[0]){
-                    text[0].value = "";
-                }
-            }
-            text[0].onblur = function (){
-                if(text[0].value == ""){
-                    text[0].value = textValue[0];
-                }
-            }
-            text[1].onfocus = function (){
-                if(text[1].value == textValue[1]){
-                    text[1].value = "";
-                }
-            }
-            text[1].onblur = function (){
-                if(text[1].value == ""){
-                    text[1].value = textValue[1];
-                }
-            }
-})();
-// ...........
-
 var go_up = document.querySelector('.go-up');
 var qsCode = document.querySelector('.qsCode');
 var modules = document.querySelector('.three-modules');

@@ -179,7 +179,7 @@ a{
     
 }
 .hover-picture a:hover{
-    background-color: #603018;
+    background-color: #c31436;
 }
 .hover-picture img{
     width: 200px;
@@ -191,6 +191,9 @@ a{
     text-align: center;
     font-size: 20px;
     color: #3d1a02;
+}
+.hover-picture p:hover{
+    color: #fff;
 }
 .company-intro{
     min-width: 1080px; 
@@ -296,88 +299,58 @@ a{
    width: 320px;
    height: 240px;
 }
-.contact-contain{
-    min-width: 1080px;
-    height: 462px;
-    background-color: #fff;
-    padding-top: 20px;
+.cooperate-contain{
+    min-width: 1200px;
 }
-.contact-main{
-    width: 1063px;
-    height: 96%;
+.cooperate{
+    width: 1200px;
+    height: 400px;
     margin: 0 auto;
+    position: relative;
 }
-.left-infor{
-    width: 50%;
-    height: 100%;
-    padding-top: 30px;
-    padding-left: 30px;
+.left-word{
+    width: 15%;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    padding-left: 52px;
+}
+.left-word::before{
+    content: "";
     display: inline-block;
-    vertical-align: top;
+    width: 180px;
+    height: 180px;
+    border: 5px solid #e33;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    border-right-color: transparent;
 }
-.left-infor p{
-    margin: 20px;
+.left-word::after{
+    content: "";
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border: 5px solid #e33;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: absolute;
+    top: -50px;
+    left: -25px;
+}
+.left-word p{
     font-size: 30px;
-    color: #7d6a56;
+    text-align: justify;
+    line-height: 1.5em;
 }
-#infor-big{
-    font-size: 38px;
-    color: #fb8c00;
+.brand-wall{
+    position: absolute;
+    left: 310px;
 }
-#line-v{
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    border: 1px solid #7d6a56;
-}
-.contact-way{
-    width: 450px;
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 30px;
-    margin-left: 40px;
-}
-.contact-way p{
-    width: 98%;
-    font-size: 20px;
-    color: #333;
-    float: left;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-.text{
-    width: 410px;
-    height: 38px;
-    text-indent: 6px;
-    color: rgba(0, 0, 0, 0.6);
-    /*font-size: 12px;*/
-    letter-spacing: 2px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    border: 1px solid #dadada;
-    float: left;
-    margin-bottom: 15px;
-}
-#textarea{
-    width: 410px;
-    border: 1px solid #dadada;
-    resize: none;
-}
-#submit{
-    width: 410px;
-    height: 40px;
-    background: #ff6347;
-    color: #fff;
-    float: left;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    outline: none;
-    font-size: 16px;
-    margin-top: 30px;
-}
-#submit:hover{
-    background-color: #e33333;
+.brand-wall img{
+    width: 800px;
+    height: 400px;
 }
 .footer{
     min-width: 1080px;
