@@ -2,7 +2,6 @@
         var prev = document.querySelector('#prev'),
              next = document.querySelector('#next');
         var currentPn = document.getElementById('currentPage').innerHTML;
-        var pic = document.querySelectorAll('.product_pic');       
         var pageNum = page.length;
         var pageArray = [0];
          (function createArray(){
@@ -13,10 +12,8 @@
                             page[i].style.display = "none";
                         }
                         pageArray.push(page[i]);
-                     };
-                     
+                     };                     
                   })();
-        console.log(pageArray);
         prev.addEventListener('click',pageBack);
         next.addEventListener('click',pageNext);
         function pageBack(){

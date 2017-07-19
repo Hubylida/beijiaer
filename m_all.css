@@ -190,3 +190,50 @@ a{
 	color: #e33;
 	font-size: 0.6rem;
 }
+
+/*手机版产品中心页面的css*/
+.m_p_contain{
+	width: 100%;
+	height: 29.5rem;
+	background-color: #292929;
+	text-align: center;
+	margin-top: 2.5rem;
+	color: #e5e5e5;
+	font-size: 0.8rem;
+}
+.m_p_contain ul{
+	margin: 0 auto;
+	width: 16rem;
+	height: 28rem;
+
+	overflow: auto;
+}
+.m_p_contain li{
+	list-style: none;
+	float: left;
+	margin: 0.5rem;
+}
+.m_p_contain img{
+	width: 7rem;
+	height: 7rem;
+}
+.m_p_ctrl{
+	clear: both;
+}
+.m_p_ctrl span{
+	margin: 0 0.5rem;
+}
+
+.m_p_footer{
+	width: 100%;
+	height: 3rem;
+	font-size: 1rem;
+	background-color: #333;
+	color: #fff;
+}
+.m_p_footer p{
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+}
+

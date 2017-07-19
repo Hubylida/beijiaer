@@ -19,7 +19,7 @@
     <meta name="renderer" content="webkit"/>
     <meta name="keywords" content="糕点,窝窝头,米糕,水米糕,加盟,杭州,贝加尔,饼">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="m_index.css">
+    <link rel="stylesheet" href="m_all.css">
     <link rel="stylesheet" href="silder/silder.css">
     <title>贝加尔</title>
     <style>
@@ -156,19 +156,36 @@
                 activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
             });
         });
-        var nBtn = document.querySelector('#nav-btn');
-		var nav_show = document.querySelector('.nav-contain');
-		var flag = true;
-		nBtn.addEventListener('click',show);
-		function show(){
-			if(flag){
-				nav_show.style.display = "inline-block";
-			}else {
-				nav_show.style.display = "none";
+        (function(){
+        	var nBtn = document.querySelector('#nav-btn');
+			var nav_show = document.querySelector('.nav-contain');
+			var flag = true;
+			nBtn.addEventListener('click',show);
+			function show(){
+				if(flag){
+					nav_show.style.display = "inline-block";
+				}else {
+					nav_show.style.display = "none";
+				}
+				flag = !flag;
 			}
-			flag = !flag;
-		}
-
+		 })();
+        (function(){
+        	var head = document.querySelector('.head');
+        	head.addEventListener('click',scrollToTop);
+        	var timer;
+        	function scrollToTop(){
+        		var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        		
+        			if(currentScroll > 0){
+        				window.scrollBy(0,-50);
+        				requestAnimationFrame(scrollToTop);
+        			}else{
+        				cancelAnimationFrame(scrollToTop);
+        			}
+        		
+        	}
+        })();
     </script>
 </body>
 </html>
