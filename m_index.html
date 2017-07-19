@@ -122,24 +122,11 @@
         		<img src="img/show_1.jpg" alt="">
         	</div>
         </div>
-		<p class="title">您的意见</p>
-		<div class="m_contact">
-        <form action="www.baidu.com">
-        	<div class="contact_way">
-        		<span>姓名</span>
-        		<input type="text" value="请如实填写您的名字" name="姓名">
-        	</div>
-        	<div class="contact_way">
-        		<span>电话</span>
-        		<input type="text" value="请如实填写您的电话" name="电话">
-        	</div>
-        	<div class="contact_way">
-        		<span>意见</span>
-        		<input type="text" name="意见">
-        	</div>
-        	<div class="contact_way"><input type="submit" value="提交" id="submit_btn"></div> 
-        </form>
-        </div>
+
+		<p class="title">我们合作的品牌</p>
+		<div class="m_brand">
+				<img src="img/brand.jpg" alt="">
+		</div>
 
         <div class="footer">
         	<div class="footer_nav">
@@ -169,6 +156,19 @@
                 activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
             });
         });
+        var nBtn = document.querySelector('#nav-btn');
+		var nav_show = document.querySelector('.nav-contain');
+		var flag = true;
+		nBtn.addEventListener('click',show);
+		function show(){
+			if(flag){
+				nav_show.style.display = "inline-block";
+			}else {
+				nav_show.style.display = "none";
+			}
+			flag = !flag;
+		}
+
     </script>
 </body>
 </html>
