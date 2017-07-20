@@ -61,6 +61,11 @@ a{
 	height: 27.5rem;
 	display: none;
 }
+.nav li{
+	width: 100%;
+	height: 3rem;
+	display: block;
+}
 .nav a{
 	display: inline-block;
 	width: 100%;
