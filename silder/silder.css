@@ -99,6 +99,10 @@ body,div,p,h1{
 	.silder-ctrl-prev,
 	.silder-ctrl-next{
 		width: 10%;
+		
+		
+	}
+	.silder-ctrl-prev span,.silder-ctrl-next span{
 		font-size: 26px;
 		margin-top: -25px;
 	}
