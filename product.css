@@ -42,14 +42,15 @@
     text-align: center;
     /*margin-top: 15px;*/
 }
-#page-column span{
+#prev,#next,.page_num{
     display: inline-block;
     width: 70px;
     height: 30px;
     cursor: pointer;
     line-height: 30px;
 }  
-#page-column span:hover{
+
+#prev,#next:hover{
     background-color: #eee;
 
 }
