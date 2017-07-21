@@ -25,8 +25,7 @@
                 currentpagesArray[currentPn].style.backgroundColor = "#fff";
                 pageArray[--currentPn].style.display = "block";
                 currentpagesArray[currentPn].style.backgroundColor = "#eee";
-            }
-            
+            }            
         }
         function pageNext(){
             if(currentPn < pageNum){       

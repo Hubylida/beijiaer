@@ -98,9 +98,7 @@ body,div,p,h1{
 @media (max-width: 768px){
 	.silder-ctrl-prev,
 	.silder-ctrl-next{
-		width: 10%;
-		
-		
+		width: 10%;		
 	}
 	.silder-ctrl-prev span,.silder-ctrl-next span{
 		font-size: 26px;

@@ -1,4 +1,4 @@
-*{
+   *{
     margin: 0px;
     padding: 0px;
     font-size: 14px;
@@ -20,7 +20,6 @@ a{
     position: relative;
 }
 .main{
-    padding-top: 15px;
     width: 100%;
     height: 100%;
 }
@@ -28,7 +27,7 @@ a{
     margin: 0px auto;
     min-width: 1080px; 
     height:120px;
-    background-color: #fff;
+    background-color: #333;
 }
 .head-main{
     width: 70%;
@@ -41,8 +40,9 @@ a{
     float: left;
     text-align: center;
     font-size: 30px;
-    color: #fb8c00;
-    padding: 28px 0px;
+    /*color: #fb8c00;*/
+    color: #e33;
+    padding: 40px 0px;
     /*display: table-cell;
     vertical-align: middle;*/
 }
@@ -50,7 +50,7 @@ a{
     height: 100%;
     width: 65%;
     float: left;
-
+    padding-top: 12px;
 }
 #head-nav a{
     display: inline-block;
@@ -59,16 +59,16 @@ a{
     padding-top: 38px;
     margin-right: 15px;
     text-align: center;
-    color: #000;
+    color: #eee;
     font-size: 16px;
     border-top: 2px solid transparent;
 }
 
 #head-nav a:hover{
-    border-top-color: #000;
+    border-top-color: #eee;
 }
 #head-nav a:active{
-    border-top-color: #000;
+    border-top-color: #eee;
 }
 .go-up{
     width: 50px;
@@ -132,6 +132,8 @@ a{
 }
 
 .silder-contain{
+    padding-top: 35px;
+    padding-bottom: 20px;
     min-width: 1080px;
 }
 
@@ -180,7 +182,7 @@ a{
     
 }
 .hover-picture a:hover{
-    background-color: #c31436;
+    background-color: #ccc;
 }
 .hover-picture img{
     width: 200px;
@@ -193,14 +195,16 @@ a{
     font-size: 20px;
     color: #3d1a02;
 }
-.hover-picture p:hover{
-    color: #fff;
-}
 .company-intro{
     min-width: 1080px; 
     height: 450px;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background: linear-gradient(15deg,#fff 20%,#64363c 0,#64363c 35%,#fff 0,#fff 50%,#64363c 0,#64363c 65%,#fff 0);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom 30px;
+    background-size: 330px 300px;
     padding-top: 30px;
+
 }
 .company-name p{
     text-align: center;
@@ -356,12 +360,12 @@ a{
 }
 .footer{
     min-width: 1080px;
-    height: 126px;
-    background-color: #3d1a02;
+    height: 110px;
+    background-color: #333;
     position: relative;
 }
 .footer-contain{
-    width: 620px;
+    width: 545px;   
     height: 100px;
     margin: auto;
     position: absolute;
@@ -369,18 +373,25 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
+    padding-top: 38px;
 } 
 .footer a{
     display: inline-block;
-    color:#fff;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    color: #e33;
+    width: 105px;
+    height: 35px;
+    margin-left: 25px;
+    transform: skewX(40deg); 
+    transition: all 0.7s;
+    font-size: 16px;
+    background: rgba(255,255,255,0.1);
     text-align: center;
-    padding-top: 41px;
-    margin: 0 24px;
-    transition: all 1s;
+    padding-top: 5px;
+}
+.footer p{
+    display: inline-block;
+    transform: skewX(-40deg);
 }
 .footer a:hover{
-    background-color:#ff6347;
+    background: rgba(255,255,255,0.5);
 }
