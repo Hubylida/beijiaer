@@ -242,3 +242,52 @@ a{
 	line-height: 3rem;
 }
 
+/* 手机版联系我们css */
+.m_contact_show{
+	width: 100%;
+	height: 27.3rem;
+	text-align: center; 
+	background: #222;
+	margin-top: 2.5rem;
+	padding-top: 0.2rem;
+}
+.m_title_1{
+	margin: 0.4rem auto;
+	color: #f3f3f3;
+	font-size: 0.7rem;
+	width: 4.2rem;
+	height: 1.2rem;
+	transform: skewX(45deg);
+	background: rgba(255,255,255,0.1);
+}
+#m_title_1{
+	display: inline-block;
+	transform: skewX(-45deg);
+}
+.m_title_2{
+	margin: 0.4rem auto;
+	width: 4.2rem;
+	height: 1.2rem;
+	transform: skewX(-45deg);
+	background: rgba(255, 255, 255, 0.1);
+	color: #f3f3f3;
+	font-size: 0.7rem;
+}
+#m_title_2{
+	display: inline-block;
+	transform: skewX(45deg);
+}
+.m_contact_ways{
+	width: 100%;
+	height: 12rem;
+	background: linear-gradient(11deg,#222 20%,#e33 0,#e33 35%,#222 0,#222 50%,#e33 0,#e33 65%,#222 0);)
+	background-repeat: no-repeat;
+}
+.m_contact_ways p{
+	width: 15rem;
+	font-size: 0.8rem;
+	color: #f3f3f3;
+	text-align: left;
+	padding-left: 1rem;
+	margin: 1rem 0;
+}

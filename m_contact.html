@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie使用edge渲染模式-->
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+	<meta name="renderer" content="webkit"><!--360渲染模式-->
+	<meta name="format-detection" content="telephone=notelphone=no, email=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色:默认值为 default，可以定为 black和 black-translucent-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" /><!-- 不让百度转码 -->
+	<meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+	<meta name="browsermode" content="application"><!-- UC应用模式 -->
+	<meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+	<meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="keywords" content="糕点,窝窝头,米糕,水米糕,加盟,杭州,贝加尔,饼">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="m_all.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贝加尔</title>
+</head>
+<body>
+    <div class="head">
+			<p>贝加尔</p>
+			<div id="nav-btn"></div>
+
+			<div class="nav-contain">
+				<ul class="nav">
+                    <li><a href="m_index.html">首页</a></li>
+					<li><a href="m_product.html">产品中心</a></li>
+					<li><a href="https://agent.dinghuo123.com/v2/share/openMall/store/44656/register?platform=">会员注册</a></li>
+					<li><a href="https://sso.dinghuo123.com/wx/login?companyName=%E7%82%B9%E5%BF%83%E5%B8%AE&appId=wx44e13ed63c6861f3&tag=&client=wechat">会员订货</a></li>
+				</ul>
+			</div>
+    </div>
+        
+    <div class="m_contact_show">
+        <p class="m_title_1"><span id="m_title_1">销售展示</span></p>
+        <div id="big_img">
+        		<img src="img/show_2.jpg" alt="">
+        	</div>
+        	<div id="small_img">
+        		<img src="img/show_3.jpg" alt="">
+        		<img src="img/show_1.jpg" alt="">
+            </div>
+        <p class="m_title_2"><span id="m_title_2">找到我们</span></p>
+        <div class="m_contact_ways">
+            <p>
+                <span>地址:</span>
+                <span>杭州市余杭区大唐电器有限公司</span>
+            </p>
+            <p>
+                <span>联系人:</span>
+                <span>张先生</span>
+            </p>
+            <p>
+                <span>电话:</span>
+                <span>11111111111</span>
+            </p>
+            <p>
+                <span>上班时间:</span>
+                <span>暂不知</span>
+            </p>
+            <p>欢迎来电咨询</p>
+        </div>
+    </div>
+
+    <script>
+          (function(){
+        	var nBtn = document.querySelector('#nav-btn');
+			var nav_show = document.querySelector('.nav-contain');
+			var flag = true;
+			nBtn.addEventListener('click',show);
+			function show(){
+				if(flag){
+					nav_show.style.display = "inline-block";
+				}else {
+					nav_show.style.display = "none";
+				}
+				flag = !flag;
+			}
+		 })();
+        (function(){
+        	var head = document.querySelector('.head');
+        	head.addEventListener('click',scrollToTop);
+        	var timer;
+        	function scrollToTop(){
+        		var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        		
+        			if(currentScroll > 0){
+        				window.scrollBy(0,-50);
+        				requestAnimationFrame(scrollToTop);
+        			}else{
+        				cancelAnimationFrame(scrollToTop);
+        			}
+        		
+        	}
+        })();
+    </script>
+</body>
+</html>
