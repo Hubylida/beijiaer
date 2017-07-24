@@ -179,16 +179,29 @@ a{
     background-color: #fff;
     transition: all 1s;
     border-radius: 20px;
-    
+}
+#product_1,#product_2,#product_3,#product_4{
+    background: url(img/product.png) ;
+    width: 200px;
+    height: 200px;
+    margin: 45px auto;
+    border-radius: 50%;
+}
+#product_1{
+    background-position: -400px 0;
+}
+#product_2{
+    background-position: 0 0;
+}
+#product_3{
+    background-position: -600px 0;
+}
+#product_4{
+    background-position: -200px 0;
+
 }
 .hover-picture a:hover{
     background-color: #ccc;
-}
-.hover-picture img{
-    width: 200px;
-    height: 200px;
-    margin: 30px 18px;
-    border-radius: 50%;
 }
 .hover-picture p{
     text-align: center;
@@ -255,14 +268,28 @@ a{
     text-align: center;
     position: relative;
 }
-
+.propagate_img{
+    width: 178px;
+    height: 110px;
+    background: url('img/propagate.png');
+    margin: 0 auto;
+}
+#propagate_1{
+    background-position: 0 0;
+}
+#propagate_2{
+    background-position: -178px 0;
+}
+#propagate_3{
+    background-position: -356px 0;
+}
 .span-5{
     font-size: 20px;
     margin: 20px;
 }
 .show{
     min-width: 1080px; 
-    height: 1000px;
+    height: 1076px;
     background-color: #eee;
     padding-top: 25px;
 }
@@ -283,21 +310,39 @@ a{
     overflow: hidden;
     margin: 43px 15px;
 }
-.photo-words img{
-   width: 320px;
-   height: 240px;
+#show_1,#show_2,#show_3{
+    background: url('img/show.png');
+    width: 288px;
+    height: 216px;
+}
+#show_2{
+    background-position: 0 -216px ;
+}
+#show_3{
+    background-position: 0 -432px ;
 }
 .pw{
    width: 90%;
-   height: 270px;
-   margin: 0 auto;   
-   padding: 10px; 
+   height: 257px;
+   margin: 20px auto;   
+   padding: 20px; 
+   background: #ddd;
+   position: relative;
 }
-.pw p{
-    display: inline-block;
-    width: 550px;
-    vertical-align: 80px;;
+.pw a{
+    width: 500px;
+    height: 100px;
+    text-indent: 20px;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%,-50%);
+    padding-top: 10px;
  } 
+.pw:hover a{
+    background: #64363c;
+    color: #f3f3f3;
+}
 .cooperate-contain{
     min-width: 1200px;
 }
